@@ -64,7 +64,7 @@ int image3ValidateSignature(Image3InternalState *handle, char validationOptions)
 
                 nested_image = NULL;
                 nested_image_length = 0;
-                is_memset_needed = options & 2;
+                isnt_memset_needed = options & 2;
                 result = image3PKIVerifyHash(
                            &actual_hash,
                            20,
@@ -75,7 +75,7 @@ int image3ValidateSignature(Image3InternalState *handle, char validationOptions)
                            &nested_image,
                            &nested_image_length);
 
-                if (!is_memset_needed)
+                if (!isnt_memset_needed)
                   memset(shsh_tag_data, 0, shsh_tag->itBufferLength);
                 if (!result) {
                   if (nested_image) {
@@ -86,7 +86,7 @@ int image3ValidateSignature(Image3InternalState *handle, char validationOptions)
 
                   image_handle->flags |= kImage3ImageIsTrusted;
 
-                  if (!is_memset_needed) {
+                  if (!isnt_memset_needed) {
                     memset(
                       &image_buffer[image->ihSignedLength],
                       0,

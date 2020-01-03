@@ -142,7 +142,7 @@ void image3Free(void *buffer, unsigned int size) {
   free(buffer);
 }
 
-int image3InstantiateFromBuffer(Image3InternalState *newHandle, Image3ObjectHeader *buffer, unsigned int bufferSize, int copyBuffer) {
+int image3InstantiateFromBuffer(Image3InternalState **newHandle, Image3ObjectHeader *buffer, unsigned int bufferSize, int copyBuffer) {
   unsigned int size_no_pack; // r1@3
   Image3InternalState *handle_buffer; // r0@6
   int image_total_length; // r0@10
@@ -193,7 +193,7 @@ int image3InstantiateFromBuffer(Image3InternalState *newHandle, Image3ObjectHead
     }
 
     result = 0;
-    newHandle = (Image3InternalState *)handle_buffer;
+    *newHandle = (Image3InternalState *)handle_buffer;
 
   }
 
@@ -289,6 +289,7 @@ int image3ValidateSignature(Image3InternalState *handle, char validationOptions)
   }
 
   image3SHA1Generate(&image->ihSignedLength, image_sig_check_area + 8, &actual_hash);
+
   if (!(options & kImage3ValidateLocalStorage)) {
     shsh_tag_data = shsh_tag->itBuffer;
     goto verify;
@@ -323,9 +324,9 @@ verify:
     goto out;
 
   if (nested_image) {
-    nested_image_init = image3InstantiateFromBuffer(&image_handle->nestedImage);
+    nested_image_init = image3InstantiateFromBuffer(&image_handle->nestedImage, (Image3ObjectHeader *)nested_image, nested_image_length, 1);
     if (nested_image_init) {
-      result_ = nested_image_init;
+      result = nested_image_init;
       goto out;
     }
 

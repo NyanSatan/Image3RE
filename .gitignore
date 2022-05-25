@@ -1,0 +1,9 @@
+.DS_Store
+Tools/a6_heap_simulator/build
+Tools/a6_heap_simulator/scenarios
+Tools/a6_heap_simulator/scenario_results
+Tools/srom_stack_analyzer/build
+Tools/srom_stack_analyzer/.vscode
+Tools/heap_parse/heap_parse.xcodeproj/xcuserdata
+Tools/heap_parse/heap_parse.xcodeproj/project.xcworkspace/xcuserdata/
+

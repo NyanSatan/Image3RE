@@ -9,6 +9,31 @@ int image3_load(struct image_info *image_info, unsigned int magic, void **addr, 
      */
 }
 
+void image3Discard(Image3InternalState **withHandle)
+{
+  Image3InternalState **handle_ptr; // r4@1
+  Image3InternalState *actual_handle; // r0@2
+
+  handle_ptr = withHandle;
+  if (withHandle)
+  {
+    actual_handle = *withHandle;
+    if (actual_handle)
+    {
+      if (actual_handle->image)
+      {
+        if (actual_handle->flags & kImage3ImageWasAllocated)
+        {
+          image3Free(actual_handle->image, actual_handle->allocSize);
+          actual_handle = *handle_ptr;
+        }
+      }
+      image3Free(actual_handle, 4u);
+      *handle_ptr = 0;
+    }
+  }
+}
+
 int image3GetTagStruct(Image3InternalState *objectHandle, const unsigned int withTag, void **structPtr, unsigned int *structSize, int skipCount) {
   Image3ObjectHeader *image_buffer; // r0@1
   unsigned int tag_ident; // r4@1
@@ -107,13 +132,7 @@ int image3AESDecryptUsingLocalKey(void *buffer, unsigned int length) {
   int result; // r0@3
   char output[16]; // [sp+Ch] [bp-30h]@1
   char dest[16]; // [sp+1Ch] [bp-20h]@1
-  int stack_protector; // [sp+2Ch] [bp-10h]@1
 
-  unsigned char derivedSeed[16] = {0xdb, 0x1f, 0x5b, 0x33, 0x60, 0x6c, 0x5f, 0x1c,
-                       0x19, 0x34, 0xaa, 0x66, 0x58, 0x9c, 0x06, 0x61};
-
-
-  stack_protector = 0x10060008;
   memmove(&dest, &derivedSeed, 0x10u);
   if ( aes_crypto_cmd(0x10u, &dest, &output, 0x10u, 0x100u, 0, 0)
     || aes_crypto_cmd(0x11u, buffer, buffer, length, 0, &output, 0)) {
@@ -123,9 +142,6 @@ int image3AESDecryptUsingLocalKey(void *buffer, unsigned int length) {
     memset(&output, 0, 16);
     result = 0;
   }
-
-  if (stack_protector != 0x10060008)
-    stack_chk_fail(result);
 
   return result;
 }
@@ -150,11 +166,11 @@ int image3InstantiateFromBuffer(Image3InternalState **newHandle, Image3ObjectHea
   signed int result; // r0@12
 
 
-  if ( bufferSize < 0x14
+  if ( bufferSize < sizeof(Image3ObjectHeader)
     || buffer->ihMagic != 'Img3'
-    || size_no_pack = buffer->ihBufferLength, size_no_pack > bufferSize - 20
+    || size_no_pack = buffer->ihBufferLength, size_no_pack > bufferSize - sizeof(Image3ObjectHeader)
     || size_no_pack < buffer->ihSignedLength
-    || size_no_pack + 20 > buffer->ihSkipDistance) {
+    || size_no_pack + sizeof(Image3ObjectHeader) > buffer->ihSkipDistance) {
 
       result = EINVAL;
 

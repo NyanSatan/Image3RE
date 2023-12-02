@@ -34,7 +34,7 @@ This repository contains my IDA database with some parts of the bootrom reversed
 The database is for IDA Pro 7.6 SP1
 
 ## Dumps
-A6 SecureROM dump (**iBoot-1145.3**) is available here, and along with many others on [securerom.fun](securerom.fun)
+A6 SecureROM dump (**iBoot-1145.3**) is available here, and along with many others on [securerom.fun](https://securerom.fun)
 
 ## Reversed code
 You can find many of Image3 functions reversed (`Image3-1145.3.c`), as well as heap ones - `malloc()`, `free()` and everything they depend on (`heap-1145.3.c`)

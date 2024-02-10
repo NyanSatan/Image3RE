@@ -1,0 +1,2564 @@
+[
+  {
+    "name": "start",
+    "start": "0x0",
+    "end": "0x12c",
+    "exit": null
+  },
+  {
+    "name": "arm_read_cpsr",
+    "start": "0x340",
+    "end": "0x348",
+    "exit": "0x344"
+  },
+  {
+    "name": "arm_read_main_id",
+    "start": "0x348",
+    "end": "0x350",
+    "exit": "0x34c"
+  },
+  {
+    "name": "arm_read_cache_id",
+    "start": "0x350",
+    "end": "0x358",
+    "exit": "0x354"
+  },
+  {
+    "name": "arm_read_cache_level_id",
+    "start": "0x358",
+    "end": "0x360",
+    "exit": "0x35c"
+  },
+  {
+    "name": "arm_read_cache_size_selection",
+    "start": "0x360",
+    "end": "0x368",
+    "exit": "0x364"
+  },
+  {
+    "name": "arm_write_cache_size_selection",
+    "start": "0x368",
+    "end": "0x374",
+    "exit": "0x370"
+  },
+  {
+    "name": "arm_read_cache_size_id",
+    "start": "0x374",
+    "end": "0x37c",
+    "exit": "0x378"
+  },
+  {
+    "name": "arm_read_extended_feature_regs",
+    "start": "0x37c",
+    "end": "0x3d4",
+    "exit": "0x3d0"
+  },
+  {
+    "name": "arm_read_memory_model_feature_regs",
+    "start": "0x3d4",
+    "end": "0x3f0",
+    "exit": "0x3ec"
+  },
+  {
+    "name": "arm_read_instruction_set_attribute_regs",
+    "start": "0x3f0",
+    "end": "0x418",
+    "exit": "0x414"
+  },
+  {
+    "name": "arm_read_cr",
+    "start": "0x418",
+    "end": "0x420",
+    "exit": "0x41c"
+  },
+  {
+    "name": "arm_write_cr",
+    "start": "0x420",
+    "end": "0x42c",
+    "exit": "0x428"
+  },
+  {
+    "name": "arm_read_aux_cr",
+    "start": "0x42c",
+    "end": "0x434",
+    "exit": "0x430"
+  },
+  {
+    "name": "arm_write_aux_cr",
+    "start": "0x434",
+    "end": "0x440",
+    "exit": "0x43c"
+  },
+  {
+    "name": "arm_write_dar",
+    "start": "0x440",
+    "end": "0x44c",
+    "exit": "0x448"
+  },
+  {
+    "name": "arm_write_ttb",
+    "start": "0x44c",
+    "end": "0x458",
+    "exit": "0x454"
+  },
+  {
+    "name": "arm_read_ifsr",
+    "start": "0x458",
+    "end": "0x460",
+    "exit": "0x45c"
+  },
+  {
+    "name": "arm_read_dfsr",
+    "start": "0x460",
+    "end": "0x468",
+    "exit": "0x464"
+  },
+  {
+    "name": "arm_read_ifar",
+    "start": "0x468",
+    "end": "0x470",
+    "exit": "0x46c"
+  },
+  {
+    "name": "arm_read_dfar",
+    "start": "0x470",
+    "end": "0x478",
+    "exit": "0x474"
+  },
+  {
+    "name": "arm_read_cp_access_cr",
+    "start": "0x478",
+    "end": "0x480",
+    "exit": "0x47c"
+  },
+  {
+    "name": "arm_write_cp_access_cr",
+    "start": "0x480",
+    "end": "0x48c",
+    "exit": "0x488"
+  },
+  {
+    "name": "arm_read_fpexc",
+    "start": "0x48c",
+    "end": "0x494",
+    "exit": "0x490"
+  },
+  {
+    "name": "arm_write_fpexc",
+    "start": "0x494",
+    "end": "0x49c",
+    "exit": "0x498"
+  },
+  {
+    "name": "arm_read_fpscr",
+    "start": "0x49c",
+    "end": "0x4a4",
+    "exit": "0x4a0"
+  },
+  {
+    "name": "arm_write_fpscr",
+    "start": "0x4a4",
+    "end": "0x4ac",
+    "exit": "0x4a8"
+  },
+  {
+    "name": "arm_read_l2_aux_cr",
+    "start": "0x4ac",
+    "end": "0x4b4",
+    "exit": "0x4b0"
+  },
+  {
+    "name": "arm_write_l2_aux_cr",
+    "start": "0x4b4",
+    "end": "0x4c0",
+    "exit": "0x4bc"
+  },
+  {
+    "name": "arm_read_pmreg",
+    "start": "0x4c0",
+    "end": "0x584",
+    "exit": "0x580"
+  },
+  {
+    "name": "arm_write_pmreg",
+    "start": "0x584",
+    "end": "0x648",
+    "exit": "0x644"
+  },
+  {
+    "name": "arm_read_user_rw_tid",
+    "start": "0x648",
+    "end": "0x650",
+    "exit": "0x64c"
+  },
+  {
+    "name": "arm_write_user_rw_tid",
+    "start": "0x650",
+    "end": "0x65c",
+    "exit": "0x658"
+  },
+  {
+    "name": "arm_read_user_ro_tid",
+    "start": "0x65c",
+    "end": "0x664",
+    "exit": "0x660"
+  },
+  {
+    "name": "arm_write_user_ro_tid",
+    "start": "0x664",
+    "end": "0x670",
+    "exit": "0x66c"
+  },
+  {
+    "name": "arm_read_sup_tid",
+    "start": "0x670",
+    "end": "0x678",
+    "exit": "0x674"
+  },
+  {
+    "name": "arm_write_sup_tid",
+    "start": "0x678",
+    "end": "0x684",
+    "exit": "0x680"
+  },
+  {
+    "name": "arm_read_perip_port_remap",
+    "start": "0x684",
+    "end": "0x68c",
+    "exit": "0x688"
+  },
+  {
+    "name": "arm_write_perip_port_remap",
+    "start": "0x68c",
+    "end": "0x698",
+    "exit": "0x694"
+  },
+  {
+    "name": "arm_flush_tlbs",
+    "start": "0x698",
+    "end": "0x6ac",
+    "exit": "0x6a8"
+  },
+  {
+    "name": "nullsub_5",
+    "start": "0x6ac",
+    "end": "0x6b0",
+    "exit": "0x6ac"
+  },
+  {
+    "name": "arm_write_dprot_region",
+    "start": "0x6b0",
+    "end": "0x6fc",
+    "exit": "0x6f8"
+  },
+  {
+    "name": "arm_write_iprot_region",
+    "start": "0x6fc",
+    "end": "0x750",
+    "exit": "0x74c"
+  },
+  {
+    "name": "arm_write_ifsr",
+    "start": "0x750",
+    "end": "0x75c",
+    "exit": "0x758"
+  },
+  {
+    "name": "arm_write_ttbr0_ttbr1",
+    "start": "0x75c",
+    "end": "0x76c",
+    "exit": "0x768"
+  },
+  {
+    "name": "arm_write_dacr",
+    "start": "0x76c",
+    "end": "0x778",
+    "exit": "0x774"
+  },
+  {
+    "name": "arch_enable_ints",
+    "start": "0x778",
+    "end": "0x78c",
+    "exit": "0x788"
+  },
+  {
+    "name": "arch_disable_ints",
+    "start": "0x78c",
+    "end": "0x7a0",
+    "exit": "0x79c"
+  },
+  {
+    "name": "arch_restore_ints",
+    "start": "0x7a0",
+    "end": "0x7bc",
+    "exit": "0x7b8"
+  },
+  {
+    "name": "arm_enable_fiqs",
+    "start": "0x7bc",
+    "end": "0x7cc",
+    "exit": "0x7c8"
+  },
+  {
+    "name": "arm_disable_fiqs",
+    "start": "0x7cc",
+    "end": "0x7dc",
+    "exit": "0x7d8"
+  },
+  {
+    "name": "arm_read_vbar",
+    "start": "0x7dc",
+    "end": "0x7e4",
+    "exit": "0x7e0"
+  },
+  {
+    "name": "arm_write_vbar",
+    "start": "0x7e4",
+    "end": "0x7ec",
+    "exit": "0x7e8"
+  },
+  {
+    "name": "arm_flush_branch_predictor",
+    "start": "0x7ec",
+    "end": "0x7fc",
+    "exit": null
+  },
+  {
+    "name": "arch_halt",
+    "start": "0x7fc",
+    "end": "0x808",
+    "exit": "0x804"
+  },
+  {
+    "name": "arch_spin",
+    "start": "0x808",
+    "end": "0x80c",
+    "exit": null
+  },
+  {
+    "name": "swift_read_l2cerrsts",
+    "start": "0x80c",
+    "end": "0x814",
+    "exit": "0x810"
+  },
+  {
+    "name": "swift_write_l2cerrsts",
+    "start": "0x814",
+    "end": "0x820",
+    "exit": "0x81c"
+  },
+  {
+    "name": "swift_read_l2cerradr",
+    "start": "0x820",
+    "end": "0x828",
+    "exit": "0x824"
+  },
+  {
+    "name": "swift_write_l2cerradr",
+    "start": "0x828",
+    "end": "0x834",
+    "exit": "0x830"
+  },
+  {
+    "name": "boot_image",
+    "start": "0x840",
+    "end": "0x882",
+    "exit": "0x880"
+  },
+  {
+    "name": "main",
+    "start": "0x884",
+    "end": "0xab0",
+    "exit": null
+  },
+  {
+    "name": "_aic_init",
+    "start": "0xb00",
+    "end": "0xb1a",
+    "exit": "0xb18"
+  },
+  {
+    "name": "unmask_int",
+    "start": "0xb28",
+    "end": "0xb4c",
+    "exit": "0xb4a"
+  },
+  {
+    "name": "timer_usecs_to_ticks",
+    "start": "0xb54",
+    "end": "0xb6a",
+    "exit": "0xb68"
+  },
+  {
+    "name": "timer_get_ticks",
+    "start": "0xb74",
+    "end": "0xb9a",
+    "exit": "0xb98"
+  },
+  {
+    "name": "aic_spin",
+    "start": "0xba4",
+    "end": "0xbba",
+    "exit": "0xbb8"
+  },
+  {
+    "name": "wdt_chip_reset",
+    "start": "0xbc0",
+    "end": "0xbdc",
+    "exit": "0xbda"
+  },
+  {
+    "name": "timer_get_entropy",
+    "start": "0xc14",
+    "end": "0xc20",
+    "exit": "0xc1e"
+  },
+  {
+    "name": "timer_ticks_to_usecs",
+    "start": "0xc24",
+    "end": "0xc2e",
+    "exit": "0xc2c"
+  },
+  {
+    "name": "install_int_handler",
+    "start": "0xc30",
+    "end": "0xc62",
+    "exit": "0xc60"
+  },
+  {
+    "name": "interrupt_init",
+    "start": "0xc6c",
+    "end": "0xc86",
+    "exit": "0xc84"
+  },
+  {
+    "name": "_aic_mask_int_internal",
+    "start": "0xc8c",
+    "end": "0xcb4",
+    "exit": "0xcb2"
+  },
+  {
+    "name": "platform_fiq",
+    "start": "0xcbc",
+    "end": "0xd00",
+    "exit": "0xcfe"
+  },
+  {
+    "name": "timer_deadline",
+    "start": "0xd18",
+    "end": "0xd3e",
+    "exit": "0xd3c"
+  },
+  {
+    "name": "timer_deadline_enter",
+    "start": "0xd48",
+    "end": "0xdb4",
+    "exit": "0xdb2"
+  },
+  {
+    "name": "interrupt_mask_all",
+    "start": "0xdc4",
+    "end": "0xdd2",
+    "exit": "0xdd0"
+  },
+  {
+    "name": "platform_irq",
+    "start": "0xdd8",
+    "end": "0xe4e",
+    "exit": "0xe4c"
+  },
+  {
+    "name": "timer_init",
+    "start": "0xe78",
+    "end": "0xeaa",
+    "exit": "0xea8"
+  },
+  {
+    "name": "cdma_clock_enable",
+    "start": "0xec0",
+    "end": "0xf08",
+    "exit": "0xf06"
+  },
+  {
+    "name": "dma_init",
+    "start": "0xf40",
+    "end": "0xf4e",
+    "exit": "0xf4c"
+  },
+  {
+    "name": "platform_disable_keys",
+    "start": "0xf80",
+    "end": "0xfc0",
+    "exit": "0xfbe"
+  },
+  {
+    "name": "dma_setup_channel",
+    "start": "0xfcc",
+    "end": "0x10f2",
+    "exit": "0x10f0"
+  },
+  {
+    "name": "dma_wait_channel_halted",
+    "start": "0x1108",
+    "end": "0x1126",
+    "exit": "0x1124"
+  },
+  {
+    "name": "aes_hw_crypto_cmd",
+    "start": "0x1128",
+    "end": "0x1338",
+    "exit": "0x1336"
+  },
+  {
+    "name": "gpio_configure_pupdn",
+    "start": "0x1380",
+    "end": "0x13b4",
+    "exit": "0x13b2"
+  },
+  {
+    "name": "gpio_init_pinconfig",
+    "start": "0x13b8",
+    "end": "0x13d6",
+    "exit": "0x13d4"
+  },
+  {
+    "name": "gpio_configure",
+    "start": "0x13e4",
+    "end": "0x146c",
+    "exit": "0x146a"
+  },
+  {
+    "name": "gpio_write",
+    "start": "0x1474",
+    "end": "0x14bc",
+    "exit": "0x14ba"
+  },
+  {
+    "name": "gpio_read",
+    "start": "0x14c4",
+    "end": "0x14ee",
+    "exit": "0x14ec"
+  },
+  {
+    "name": "h2fmi_config_page_addr",
+    "start": "0x1510",
+    "end": "0x153c",
+    "exit": "0x153a"
+  },
+  {
+    "name": "h2fmi_clean_ecc",
+    "start": "0x1544",
+    "end": "0x1558",
+    "exit": "0x1556"
+  },
+  {
+    "name": "h2fmi_fmc_read_data",
+    "start": "0x155c",
+    "end": "0x159e",
+    "exit": "0x159c"
+  },
+  {
+    "name": "h2fmi_nanos_to_clocks",
+    "start": "0x15ac",
+    "end": "0x15e6",
+    "exit": "0x15e4"
+  },
+  {
+    "name": "h2fmi_calc_timing_clocks",
+    "start": "0x15e8",
+    "end": "0x164a",
+    "exit": "0x1648"
+  },
+  {
+    "name": "h2fmi_wait_dma_task_pending",
+    "start": "0x164c",
+    "end": "0x168a",
+    "exit": "0x1688"
+  },
+  {
+    "name": "h2fmi_pio_read_sector",
+    "start": "0x1690",
+    "end": "0x16e6",
+    "exit": "0x16e4"
+  },
+  {
+    "name": "h2fmi_wait_done",
+    "start": "0x16e8",
+    "end": "0x173a",
+    "exit": "0x1738"
+  },
+  {
+    "name": "h2fmi_start_nand_page_read",
+    "start": "0x1740",
+    "end": "0x1856",
+    "exit": "0x1854"
+  },
+  {
+    "name": "h2fmi_nand_read_id",
+    "start": "0x187c",
+    "end": "0x18fc",
+    "exit": "0x18fa"
+  },
+  {
+    "name": "h2fmi_nand_reset",
+    "start": "0x1904",
+    "end": "0x194c",
+    "exit": "0x194a"
+  },
+  {
+    "name": "h2fmi_calc_bus_timings",
+    "start": "0x1958",
+    "end": "0x19c6",
+    "exit": "0x19c4"
+  },
+  {
+    "name": "h2fmi_reset",
+    "start": "0x19d0",
+    "end": "0x19fa",
+    "exit": "0x19f8"
+  },
+  {
+    "name": "h2fmi_gate",
+    "start": "0x1a04",
+    "end": "0x1a2e",
+    "exit": "0x1a2c"
+  },
+  {
+    "name": "h2fmi_ungate",
+    "start": "0x1a34",
+    "end": "0x1a5e",
+    "exit": "0x1a5c"
+  },
+  {
+    "name": "h2fmi_init_minimal",
+    "start": "0x1a64",
+    "end": "0x1abc",
+    "exit": "0x1aba"
+  },
+  {
+    "name": "nand_read_bootblock",
+    "start": "0x1ac4",
+    "end": "0x1c5c",
+    "exit": "0x1c5a"
+  },
+  {
+    "name": "sha1_hw_calculate",
+    "start": "0x1c80",
+    "end": "0x1db8",
+    "exit": "0x1db6"
+  },
+  {
+    "name": "flash_spi_setup_bus",
+    "start": "0x1e00",
+    "end": "0x1e36",
+    "exit": "0x1e34"
+  },
+  {
+    "name": "flash_spi_read_rdsr",
+    "start": "0x1e38",
+    "end": "0x1eb6",
+    "exit": "0x1eb4"
+  },
+  {
+    "name": "flash_spi_init",
+    "start": "0x1eb8",
+    "end": "0x1f60",
+    "exit": "0x1f5e"
+  },
+  {
+    "name": "flash_spi_read_range",
+    "start": "0x1f6c",
+    "end": "0x1fe6",
+    "exit": "0x1fe4"
+  },
+  {
+    "name": "pke_do_exp",
+    "start": "0x2000",
+    "end": "0x2066",
+    "exit": "0x2064"
+  },
+  {
+    "name": "get_precision",
+    "start": "0x2078",
+    "end": "0x20c6",
+    "exit": "0x20c4"
+  },
+  {
+    "name": "get_chunkSize",
+    "start": "0x20c8",
+    "end": "0x2120",
+    "exit": "0x211e"
+  },
+  {
+    "name": "config_pke_key_len",
+    "start": "0x2124",
+    "end": "0x2140",
+    "exit": "0x213e"
+  },
+  {
+    "name": "highestSetBit",
+    "start": "0x2140",
+    "end": "0x217a",
+    "exit": "0x2178"
+  },
+  {
+    "name": "add",
+    "start": "0x217c",
+    "end": "0x21b8",
+    "exit": "0x21b6"
+  },
+  {
+    "name": "copy_into_segment",
+    "start": "0x21b8",
+    "end": "0x223e",
+    "exit": "0x223c"
+  },
+  {
+    "name": "rsa_cal_R0",
+    "start": "0x2244",
+    "end": "0x236a",
+    "exit": "0x2368"
+  },
+  {
+    "name": "rsa_cal_exp",
+    "start": "0x236c",
+    "end": "0x26ca",
+    "exit": "0x26c8"
+  },
+  {
+    "name": "spiregs",
+    "start": "0x2700",
+    "end": "0x271a",
+    "exit": "0x2718"
+  },
+  {
+    "name": "spi_set_port_dma",
+    "start": "0x2720",
+    "end": "0x273a",
+    "exit": "0x2738"
+  },
+  {
+    "name": "spi_flush_tx_fifo",
+    "start": "0x2754",
+    "end": "0x2768",
+    "exit": "0x2766"
+  },
+  {
+    "name": "spi_flush_rx_fifo",
+    "start": "0x2768",
+    "end": "0x277c",
+    "exit": "0x277a"
+  },
+  {
+    "name": "spi_gpio_read",
+    "start": "0x27ac",
+    "end": "0x27c2",
+    "exit": "0x27c0"
+  },
+  {
+    "name": "spi_gpio_write",
+    "start": "0x27c4",
+    "end": "0x27e8",
+    "exit": "0x27e6"
+  },
+  {
+    "name": "spi_gpio_configure",
+    "start": "0x27e8",
+    "end": "0x2814",
+    "exit": "0x2812"
+  },
+  {
+    "name": "spi_init",
+    "start": "0x2814",
+    "end": "0x2880",
+    "exit": "0x287e"
+  },
+  {
+    "name": "spi_interrupt",
+    "start": "0x2888",
+    "end": "0x2a08",
+    "exit": "0x2a06"
+  },
+  {
+    "name": "spi_read_etc",
+    "start": "0x2a10",
+    "end": "0x2af8",
+    "exit": "0x2af6"
+  },
+  {
+    "name": "spi_write_etc",
+    "start": "0x2b14",
+    "end": "0x2c16",
+    "exit": "0x2c14"
+  },
+  {
+    "name": "spi_setup",
+    "start": "0x2c3c",
+    "end": "0x2d78",
+    "exit": "0x2d76"
+  },
+  {
+    "name": "usbphy_is_cable_connected",
+    "start": "0x2d98",
+    "end": "0x2ddc",
+    "exit": "0x2dda"
+  },
+  {
+    "name": "usbphy_power_down",
+    "start": "0x2de4",
+    "end": "0x2e50",
+    "exit": "0x2e4e"
+  },
+  {
+    "name": "usbphy_power_up",
+    "start": "0x2e60",
+    "end": "0x2f24",
+    "exit": "0x2f22"
+  },
+  {
+    "name": "sub_2F80",
+    "start": "0x2f80",
+    "end": "0x2f88",
+    "exit": "0x2f86"
+  },
+  {
+    "name": "sub_2F88",
+    "start": "0x2f88",
+    "end": "0x2f90",
+    "exit": "0x2f8e"
+  },
+  {
+    "name": "sub_2F90",
+    "start": "0x2f90",
+    "end": "0x2fa4",
+    "exit": "0x2fa2"
+  },
+  {
+    "name": "sub_2FA4",
+    "start": "0x2fa4",
+    "end": "0x2fb4",
+    "exit": "0x2fb2"
+  },
+  {
+    "name": "sub_2FB8",
+    "start": "0x2fb8",
+    "end": "0x2fbc",
+    "exit": "0x2fba"
+  },
+  {
+    "name": "nullsub_1",
+    "start": "0x2fbc",
+    "end": "0x2fbe",
+    "exit": "0x2fbc"
+  },
+  {
+    "name": "sub_2FFC",
+    "start": "0x2ffc",
+    "end": "0x304c",
+    "exit": "0x304a"
+  },
+  {
+    "name": "sub_3054",
+    "start": "0x3054",
+    "end": "0x3072",
+    "exit": "0x3070"
+  },
+  {
+    "name": "sub_3078",
+    "start": "0x3078",
+    "end": "0x3098",
+    "exit": "0x3096"
+  },
+  {
+    "name": "sub_309C",
+    "start": "0x309c",
+    "end": "0x30ee",
+    "exit": "0x30ec"
+  },
+  {
+    "name": "sub_30F4",
+    "start": "0x30f4",
+    "end": "0x313a",
+    "exit": "0x3138"
+  },
+  {
+    "name": "sub_3144",
+    "start": "0x3144",
+    "end": "0x3262",
+    "exit": "0x3260"
+  },
+  {
+    "name": "sub_3274",
+    "start": "0x3274",
+    "end": "0x335c",
+    "exit": "0x335a"
+  },
+  {
+    "name": "sub_3370",
+    "start": "0x3370",
+    "end": "0x3412",
+    "exit": "0x3410"
+  },
+  {
+    "name": "sub_342C",
+    "start": "0x342c",
+    "end": "0x34c2",
+    "exit": "0x34c0"
+  },
+  {
+    "name": "sub_34DC",
+    "start": "0x34dc",
+    "end": "0x3544",
+    "exit": "0x3542"
+  },
+  {
+    "name": "sub_3548",
+    "start": "0x3548",
+    "end": "0x3578",
+    "exit": "0x3576"
+  },
+  {
+    "name": "sub_358C",
+    "start": "0x358c",
+    "end": "0x3670",
+    "exit": "0x366e"
+  },
+  {
+    "name": "sub_367C",
+    "start": "0x367c",
+    "end": "0x3756",
+    "exit": "0x3754"
+  },
+  {
+    "name": "synopsys_otg_start",
+    "start": "0x378c",
+    "end": "0x3804",
+    "exit": "0x3802"
+  },
+  {
+    "name": "synopsys_otg_stop",
+    "start": "0x381c",
+    "end": "0x3868",
+    "exit": "0x3866"
+  },
+  {
+    "name": "synopsys_otg_int_handler",
+    "start": "0x387c",
+    "end": "0x3b14",
+    "exit": "0x3b12"
+  },
+  {
+    "name": "sub_3B58",
+    "start": "0x3b58",
+    "end": "0x3b90",
+    "exit": "0x3b8e"
+  },
+  {
+    "name": "sub_3B98",
+    "start": "0x3b98",
+    "end": "0x3bb4",
+    "exit": "0x3bb2"
+  },
+  {
+    "name": "quantify_size",
+    "start": "0x3bc0",
+    "end": "0x3bc4",
+    "exit": "0x3bc2"
+  },
+  {
+    "name": "required_size",
+    "start": "0x3bc4",
+    "end": "0x3bd2",
+    "exit": "0x3bd0"
+  },
+  {
+    "name": "next_block",
+    "start": "0x3bd4",
+    "end": "0x3bdc",
+    "exit": "0x3bda"
+  },
+  {
+    "name": "prev_block",
+    "start": "0x3bdc",
+    "end": "0x3be6",
+    "exit": "0x3be4"
+  },
+  {
+    "name": "compute_bin",
+    "start": "0x3bf4",
+    "end": "0x3c06",
+    "exit": "0x3c04"
+  },
+  {
+    "name": "free",
+    "start": "0x3c08",
+    "end": "0x3d2c",
+    "exit": "0x3d2a"
+  },
+  {
+    "name": "heap_add_chunk",
+    "start": "0x3d38",
+    "end": "0x3dce",
+    "exit": "0x3dcc"
+  },
+  {
+    "name": "assign_chunk",
+    "start": "0x3ddc",
+    "end": "0x3e78",
+    "exit": "0x3e76"
+  },
+  {
+    "name": "malloc",
+    "start": "0x3e7c",
+    "end": "0x3eee",
+    "exit": "0x3eec"
+  },
+  {
+    "name": "memalign",
+    "start": "0x3efc",
+    "end": "0x40b2",
+    "exit": "0x40b0"
+  },
+  {
+    "name": "image3GetTagStruct",
+    "start": "0x40c0",
+    "end": "0x419e",
+    "exit": "0x419c"
+  },
+  {
+    "name": "image3GetTagUnsignedNumber",
+    "start": "0x41a0",
+    "end": "0x422c",
+    "exit": "0x422a"
+  },
+  {
+    "name": "image3GetNestedImage",
+    "start": "0x4250",
+    "end": "0x4254",
+    "exit": "0x4252"
+  },
+  {
+    "name": "image3InstantiateFromBuffer",
+    "start": "0x4268",
+    "end": "0x4368",
+    "exit": "0x4366"
+  },
+  {
+    "name": "image3ValidateSignature",
+    "start": "0x4370",
+    "end": "0x45e8",
+    "exit": "0x45e6"
+  },
+  {
+    "name": "image3Discard",
+    "start": "0x45f8",
+    "end": "0x4626",
+    "exit": "0x4624"
+  },
+  {
+    "name": "image3Find",
+    "start": "0x4640",
+    "end": "0x465c",
+    "exit": "0x465a"
+  },
+  {
+    "name": "image3Free",
+    "start": "0x4660",
+    "end": "0x466a",
+    "exit": "0x4668"
+  },
+  {
+    "name": "image3Malloc",
+    "start": "0x466c",
+    "end": "0x467a",
+    "exit": "0x4678"
+  },
+  {
+    "name": "image3PKIVerifyHash",
+    "start": "0x467c",
+    "end": "0x46a2",
+    "exit": "0x46a0"
+  },
+  {
+    "name": "image3SHA1Generate",
+    "start": "0x46a4",
+    "end": "0x46ae",
+    "exit": "0x46ac"
+  },
+  {
+    "name": "image3AESDecryptUsingLocalKey",
+    "start": "0x46b0",
+    "end": "0x4722",
+    "exit": "0x4720"
+  },
+  {
+    "name": "verifyNumberRelation",
+    "start": "0x474c",
+    "end": "0x481c",
+    "exit": "0x481a"
+  },
+  {
+    "name": "verifyIntersectingBits",
+    "start": "0x481c",
+    "end": "0x48c2",
+    "exit": "0x48c0"
+  },
+  {
+    "name": "image3_load",
+    "start": "0x48c4",
+    "end": "0x4d3e",
+    "exit": "0x4d3c"
+  },
+  {
+    "name": "image3_process_superblock",
+    "start": "0x4d84",
+    "end": "0x4ed6",
+    "exit": "0x4ed4"
+  },
+  {
+    "name": "platform_consume_nonce",
+    "start": "0x4f00",
+    "end": "0x4fa2",
+    "exit": "0x4fa0"
+  },
+  {
+    "name": "platform_start",
+    "start": "0x4fc0",
+    "end": "0x4fd8",
+    "exit": "0x4fd4"
+  },
+  {
+    "name": "miu_read_l2cadrmap",
+    "start": "0x4fd8",
+    "end": "0x4fe0",
+    "exit": "0x4fdc"
+  },
+  {
+    "name": "miu_write_l2cadrmap",
+    "start": "0x4fe0",
+    "end": "0x4fec",
+    "exit": "0x4fe8"
+  },
+  {
+    "name": "platform_get_board_id",
+    "start": "0x4fec",
+    "end": "0x4ff8",
+    "exit": "0x4ff6"
+  },
+  {
+    "name": "platform_get_keybag_selector",
+    "start": "0x5020",
+    "end": "0x504a",
+    "exit": "0x5048"
+  },
+  {
+    "name": "platform_get_request_dfu2",
+    "start": "0x5050",
+    "end": "0x5064",
+    "exit": "0x5062"
+  },
+  {
+    "name": "platform_get_request_dfu1",
+    "start": "0x5064",
+    "end": "0x5078",
+    "exit": "0x5076"
+  },
+  {
+    "name": "platform_get_force_dfu",
+    "start": "0x5078",
+    "end": "0x5086",
+    "exit": "0x5084"
+  },
+  {
+    "name": "platform_set_dfu_status",
+    "start": "0x5088",
+    "end": "0x5098",
+    "exit": "0x5096"
+  },
+  {
+    "name": "platform_get_usb_cable_connected",
+    "start": "0x5098",
+    "end": "0x50a2",
+    "exit": "0x50a0"
+  },
+  {
+    "name": "platform_get_ecid_image_personalization_required",
+    "start": "0x50c4",
+    "end": "0x50ce",
+    "exit": "0x50cc"
+  },
+  {
+    "name": "platform_get_nonce",
+    "start": "0x50d0",
+    "end": "0x5120",
+    "exit": "0x511e"
+  },
+  {
+    "name": "platform_enable_boot_interface",
+    "start": "0x512c",
+    "end": "0x522e",
+    "exit": "0x522c"
+  },
+  {
+    "name": "platform_init",
+    "start": "0x5260",
+    "end": "0x526c",
+    "exit": "0x526a"
+  },
+  {
+    "name": "platform_mmu_init",
+    "start": "0x526c",
+    "end": "0x52be",
+    "exit": "0x52bc"
+  },
+  {
+    "name": "platform_quiesce_hardware",
+    "start": "0x52c4",
+    "end": "0x52d8",
+    "exit": "0x52d6"
+  },
+  {
+    "name": "platform_init_internal_mem",
+    "start": "0x52d8",
+    "end": "0x52e4",
+    "exit": "0x52e2"
+  },
+  {
+    "name": "platform_init_hwpins",
+    "start": "0x52e4",
+    "end": "0x52f0",
+    "exit": "0x52ee"
+  },
+  {
+    "name": "platform_init_setup_clocks",
+    "start": "0x52f0",
+    "end": "0x52fc",
+    "exit": "0x52fa"
+  },
+  {
+    "name": "platform_early_init",
+    "start": "0x52fc",
+    "end": "0x54e0",
+    "exit": "0x54de"
+  },
+  {
+    "name": "platform_get_boot_device",
+    "start": "0x54e4",
+    "end": "0x5616",
+    "exit": "0x5614"
+  },
+  {
+    "name": "platform_bootprep",
+    "start": "0x562c",
+    "end": "0x56ac",
+    "exit": "0x56aa"
+  },
+  {
+    "name": "chipid_get_production_mode",
+    "start": "0x56c0",
+    "end": "0x56ca",
+    "exit": "0x56c8"
+  },
+  {
+    "name": "chipid_clear_production_mode",
+    "start": "0x56d0",
+    "end": "0x56dc",
+    "exit": "0x56da"
+  },
+  {
+    "name": "chipid_get_secure_mode",
+    "start": "0x56e0",
+    "end": "0x56ec",
+    "exit": "0x56ea"
+  },
+  {
+    "name": "chipid_get_security_domain",
+    "start": "0x56f0",
+    "end": "0x56fc",
+    "exit": "0x56fa"
+  },
+  {
+    "name": "chipid_get_board_id",
+    "start": "0x5700",
+    "end": "0x570c",
+    "exit": "0x570a"
+  },
+  {
+    "name": "chipid_get_ecid_image_personalization_required",
+    "start": "0x5710",
+    "end": "0x571c",
+    "exit": "0x571a"
+  },
+  {
+    "name": "chipid_get_minimum_epoch",
+    "start": "0x5720",
+    "end": "0x572c",
+    "exit": "0x572a"
+  },
+  {
+    "name": "chipid_get_chip_id",
+    "start": "0x5730",
+    "end": "0x5736",
+    "exit": "0x5734"
+  },
+  {
+    "name": "chipid_get_chip_revision",
+    "start": "0x5738",
+    "end": "0x574e",
+    "exit": "0x574c"
+  },
+  {
+    "name": "chipid_get_ecid_id",
+    "start": "0x575c",
+    "end": "0x5808",
+    "exit": "0x5806"
+  },
+  {
+    "name": "chipid_set_fuse_lock",
+    "start": "0x5838",
+    "end": "0x5846",
+    "exit": "0x5844"
+  },
+  {
+    "name": "miu_select_remap",
+    "start": "0x584c",
+    "end": "0x5878",
+    "exit": "0x5876"
+  },
+  {
+    "name": "miu_init",
+    "start": "0x5878",
+    "end": "0x58ea",
+    "exit": "0x58e8"
+  },
+  {
+    "name": "miu_initialize_internal_ram",
+    "start": "0x58f4",
+    "end": "0x5922",
+    "exit": "0x5920"
+  },
+  {
+    "name": "platform_power_init",
+    "start": "0x5940",
+    "end": "0x5942",
+    "exit": "0x5940"
+  },
+  {
+    "name": "clocks_init",
+    "start": "0x5944",
+    "end": "0x5948",
+    "exit": "0x5946"
+  },
+  {
+    "name": "update_perf_state",
+    "start": "0x5948",
+    "end": "0x5976",
+    "exit": "0x5974"
+  },
+  {
+    "name": "clock_update_range",
+    "start": "0x5980",
+    "end": "0x59aa",
+    "exit": "0x59a8"
+  },
+  {
+    "name": "clocks_set_performance",
+    "start": "0x59b0",
+    "end": "0x59c4",
+    "exit": "0x59c2"
+  },
+  {
+    "name": "clock_get_frequency",
+    "start": "0x59c8",
+    "end": "0x5a66",
+    "exit": "0x5a64"
+  },
+  {
+    "name": "clock_gate",
+    "start": "0x5a70",
+    "end": "0x5aae",
+    "exit": "0x5aac"
+  },
+  {
+    "name": "clocks_set_gates",
+    "start": "0x5ab8",
+    "end": "0x5b56",
+    "exit": "0x5b52"
+  },
+  {
+    "name": "clocks_quiesce_internal",
+    "start": "0x5b5c",
+    "end": "0x5c14",
+    "exit": "0x5bfc"
+  },
+  {
+    "name": "clocks_quiesce",
+    "start": "0x5c38",
+    "end": "0x5c54",
+    "exit": "0x5c52"
+  },
+  {
+    "name": "clocks_set_default",
+    "start": "0x5c64",
+    "end": "0x5e5e",
+    "exit": "0x5e5c"
+  },
+  {
+    "name": "clock_reset_device",
+    "start": "0x5ec0",
+    "end": "0x5f28",
+    "exit": "0x5f26"
+  },
+  {
+    "name": "platform_watchdog_tickle",
+    "start": "0x5f2c",
+    "end": "0x5f36",
+    "exit": "0x5f34"
+  },
+  {
+    "name": "platform_reset",
+    "start": "0x5f38",
+    "end": "0x5f42",
+    "exit": null
+  },
+  {
+    "name": "platform_power_spin",
+    "start": "0x5f60",
+    "end": "0x5f6a",
+    "exit": "0x5f68"
+  },
+  {
+    "name": "prepare_and_jump",
+    "start": "0x5f80",
+    "end": "0x5fae",
+    "exit": null
+  },
+  {
+    "name": "_callout_reset_deadline",
+    "start": "0x5fc0",
+    "end": "0x5fe4",
+    "exit": "0x5fe2"
+  },
+  {
+    "name": "_callout_dequeue",
+    "start": "0x5fec",
+    "end": "0x6012",
+    "exit": "0x6010"
+  },
+  {
+    "name": "callout_reset_deadline",
+    "start": "0x6014",
+    "end": "0x602e",
+    "exit": "0x602c"
+  },
+  {
+    "name": "callout_enqueue",
+    "start": "0x6044",
+    "end": "0x60e2",
+    "exit": "0x60e0"
+  },
+  {
+    "name": "callout_deadline",
+    "start": "0x60f8",
+    "end": "0x6146",
+    "exit": "0x6144"
+  },
+  {
+    "name": "debug_putchar",
+    "start": "0x6150",
+    "end": "0x6152",
+    "exit": "0x6150"
+  },
+  {
+    "name": "debug_init",
+    "start": "0x6154",
+    "end": "0x6168",
+    "exit": "0x6166"
+  },
+  {
+    "name": "panic",
+    "start": "0x6190",
+    "end": "0x6244",
+    "exit": null
+  },
+  {
+    "name": "stack_chk_fail",
+    "start": "0x6268",
+    "end": "0x6274",
+    "exit": null
+  },
+  {
+    "name": "sys_init",
+    "start": "0x6280",
+    "end": "0x62ae",
+    "exit": "0x62ac"
+  },
+  {
+    "name": "_irq_exit_critical_section",
+    "start": "0x62c0",
+    "end": "0x62dc",
+    "exit": "0x62da"
+  },
+  {
+    "name": "_irq_enter_critical_section",
+    "start": "0x62e4",
+    "end": "0x6306",
+    "exit": "0x6304"
+  },
+  {
+    "name": "exit_critical_section",
+    "start": "0x6310",
+    "end": "0x6336",
+    "exit": "0x6334"
+  },
+  {
+    "name": "enter_critical_section",
+    "start": "0x6340",
+    "end": "0x636e",
+    "exit": "0x636c"
+  },
+  {
+    "name": "deep_idle_timeout",
+    "start": "0x6380",
+    "end": "0x6388",
+    "exit": "0x6386"
+  },
+  {
+    "name": "insert_run_q_tail",
+    "start": "0x6398",
+    "end": "0x63bc",
+    "exit": "0x63ba"
+  },
+  {
+    "name": "task_sleep_callback",
+    "start": "0x63c4",
+    "end": "0x63d4",
+    "exit": "0x63d2"
+  },
+  {
+    "name": "event_unsignal",
+    "start": "0x63e8",
+    "end": "0x63ee",
+    "exit": "0x63ec"
+  },
+  {
+    "name": "task_create",
+    "start": "0x6400",
+    "end": "0x6490",
+    "exit": "0x648e"
+  },
+  {
+    "name": "task_init",
+    "start": "0x64bc",
+    "end": "0x6508",
+    "exit": "0x6506"
+  },
+  {
+    "name": "event_init",
+    "start": "0x6528",
+    "end": "0x6536",
+    "exit": "0x6534"
+  },
+  {
+    "name": "task_yield",
+    "start": "0x6538",
+    "end": "0x65f2",
+    "exit": "0x65f0"
+  },
+  {
+    "name": "task_sleep",
+    "start": "0x6624",
+    "end": "0x665a",
+    "exit": "0x6658"
+  },
+  {
+    "name": "task_block",
+    "start": "0x6664",
+    "end": "0x6692",
+    "exit": "0x6690"
+  },
+  {
+    "name": "event_wait",
+    "start": "0x669c",
+    "end": "0x66c6",
+    "exit": "0x66c4"
+  },
+  {
+    "name": "idle_task_routine",
+    "start": "0x66e0",
+    "end": "0x6790",
+    "exit": null
+  },
+  {
+    "name": "wait_queue_wake_one",
+    "start": "0x67e0",
+    "end": "0x681a",
+    "exit": "0x6818"
+  },
+  {
+    "name": "wait_queue_wake_all",
+    "start": "0x681c",
+    "end": "0x6868",
+    "exit": "0x6866"
+  },
+  {
+    "name": "event_signal",
+    "start": "0x6868",
+    "end": "0x689e",
+    "exit": "0x689c"
+  },
+  {
+    "name": "task_exit",
+    "start": "0x68ac",
+    "end": "0x68d8",
+    "exit": null
+  },
+  {
+    "name": "system_time",
+    "start": "0x6900",
+    "end": "0x690e",
+    "exit": "0x690c"
+  },
+  {
+    "name": "spin",
+    "start": "0x6910",
+    "end": "0x693e",
+    "exit": "0x693c"
+  },
+  {
+    "name": "time_has_elapsed",
+    "start": "0x6940",
+    "end": "0x6970",
+    "exit": "0x696e"
+  },
+  {
+    "name": "security_set_untrusted",
+    "start": "0x6980",
+    "end": "0x6992",
+    "exit": "0x6990"
+  },
+  {
+    "name": "security_allow_modes",
+    "start": "0x699c",
+    "end": "0x69c0",
+    "exit": "0x69be"
+  },
+  {
+    "name": "security_protect_memory",
+    "start": "0x69e0",
+    "end": "0x6a1e",
+    "exit": "0x6a1c"
+  },
+  {
+    "name": "security_allow_memory",
+    "start": "0x6a28",
+    "end": "0x6a5c",
+    "exit": "0x6a5a"
+  },
+  {
+    "name": "security_validate_image",
+    "start": "0x6a64",
+    "end": "0x6a80",
+    "exit": "0x6a7e"
+  },
+  {
+    "name": "security_set_production_override",
+    "start": "0x6a80",
+    "end": "0x6a94",
+    "exit": "0x6a92"
+  },
+  {
+    "name": "security_get_production_override",
+    "start": "0x6a98",
+    "end": "0x6aa2",
+    "exit": "0x6aa0"
+  },
+  {
+    "name": "security_init",
+    "start": "0x6ad4",
+    "end": "0x6b38",
+    "exit": "0x6b36"
+  },
+  {
+    "name": "arm_clean_dcache_line",
+    "start": "0x6b80",
+    "end": "0x6b8c",
+    "exit": "0x6b88"
+  },
+  {
+    "name": "arm_invalidate_dcache_line",
+    "start": "0x6b8c",
+    "end": "0x6b98",
+    "exit": "0x6b94"
+  },
+  {
+    "name": "arm_clean_invalidate_dcache_line",
+    "start": "0x6b98",
+    "end": "0x6ba4",
+    "exit": "0x6ba0"
+  },
+  {
+    "name": "arm_clean_dcache",
+    "start": "0x6ba4",
+    "end": "0x6bd8",
+    "exit": "0x6bd4"
+  },
+  {
+    "name": "arm_clean_invalidate_dcache",
+    "start": "0x6bd8",
+    "end": "0x6c0c",
+    "exit": "0x6c08"
+  },
+  {
+    "name": "arm_invalidate_dcache",
+    "start": "0x6c0c",
+    "end": "0x6c38",
+    "exit": "0x6c34"
+  },
+  {
+    "name": "arm_invalidate_icache",
+    "start": "0x6c38",
+    "end": "0x6c58",
+    "exit": "0x6c54"
+  },
+  {
+    "name": "arm_clean_caches",
+    "start": "0x6c58",
+    "end": "0x6c6c",
+    "exit": "0x6c68"
+  },
+  {
+    "name": "arm_enable_l1parity",
+    "start": "0x6c6c",
+    "end": "0x6c7c",
+    "exit": "0x6c78"
+  },
+  {
+    "name": "arm_drain_write_buffer",
+    "start": "0x6c7c",
+    "end": "0x6c8c",
+    "exit": "0x6c88"
+  },
+  {
+    "name": "arm_mmu_map_section_range",
+    "start": "0x6c94",
+    "end": "0x6dac",
+    "exit": "0x6daa"
+  },
+  {
+    "name": "arm_mmu_init",
+    "start": "0x6db4",
+    "end": "0x6dec",
+    "exit": "0x6dea"
+  },
+  {
+    "name": "arm_mmu_map_section",
+    "start": "0x6df4",
+    "end": "0x6e40",
+    "exit": "0x6e3e"
+  },
+  {
+    "name": "arch_cpu_init_posttasks",
+    "start": "0x6e80",
+    "end": "0x6e84",
+    "exit": "0x6e82"
+  },
+  {
+    "name": "platform_get_boot_trampoline",
+    "start": "0x6e84",
+    "end": "0x6eb8",
+    "exit": "0x6eb6"
+  },
+  {
+    "name": "arch_cpu_quiesce",
+    "start": "0x6ecc",
+    "end": "0x6f00",
+    "exit": "0x6efe"
+  },
+  {
+    "name": "arch_cpu_init",
+    "start": "0x6f04",
+    "end": "0x6f3a",
+    "exit": "0x6f38"
+  },
+  {
+    "name": "arch_task_context_switch",
+    "start": "0x6f40",
+    "end": "0x6f54",
+    "exit": "0x6f50"
+  },
+  {
+    "name": "arch_get_entropy",
+    "start": "0x6f80",
+    "end": "0x6fb0",
+    "exit": "0x6fac"
+  },
+  {
+    "name": "__arm_irq",
+    "start": "0x6fc0",
+    "end": "0x7008",
+    "exit": "0x7004"
+  },
+  {
+    "name": "__arm_fiq",
+    "start": "0x7008",
+    "end": "0x7050",
+    "exit": "0x704c"
+  },
+  {
+    "name": "__arm_undefined",
+    "start": "0x7050",
+    "end": "0x7088",
+    "exit": null
+  },
+  {
+    "name": "__arm_syscall",
+    "start": "0x7088",
+    "end": "0x70c0",
+    "exit": null
+  },
+  {
+    "name": "__arm_prefetch_abort",
+    "start": "0x70c0",
+    "end": "0x70f8",
+    "exit": null
+  },
+  {
+    "name": "__arm_data_abort",
+    "start": "0x70fc",
+    "end": "0x7134",
+    "exit": null
+  },
+  {
+    "name": "__arm_reserved",
+    "start": "0x7134",
+    "end": "0x7138",
+    "exit": null
+  },
+  {
+    "name": "arm_fiq",
+    "start": "0x715c",
+    "end": "0x716e",
+    "exit": "0x716c"
+  },
+  {
+    "name": "arm_irq",
+    "start": "0x7170",
+    "end": "0x7182",
+    "exit": "0x7180"
+  },
+  {
+    "name": "arm_prefetch_abort",
+    "start": "0x7184",
+    "end": "0x7196",
+    "exit": null
+  },
+  {
+    "name": "arm_data_abort",
+    "start": "0x719c",
+    "end": "0x71ae",
+    "exit": null
+  },
+  {
+    "name": "arm_syscall",
+    "start": "0x71b4",
+    "end": "0x71da",
+    "exit": null
+  },
+  {
+    "name": "arm_undefined",
+    "start": "0x71e4",
+    "end": "0x720a",
+    "exit": null
+  },
+  {
+    "name": "arch_task_create",
+    "start": "0x7240",
+    "end": "0x7268",
+    "exit": "0x7266"
+  },
+  {
+    "name": "arch_task_trampoline",
+    "start": "0x726c",
+    "end": "0x7282",
+    "exit": null
+  },
+  {
+    "name": "trampoline",
+    "start": "0x72c0",
+    "end": "0x72f0",
+    "exit": null
+  },
+  {
+    "name": "aes_crypto_cmd",
+    "start": "0x7300",
+    "end": "0x7366",
+    "exit": "0x7364"
+  },
+  {
+    "name": "nor_blockdev_read_block",
+    "start": "0x7380",
+    "end": "0x73be",
+    "exit": "0x73bc"
+  },
+  {
+    "name": "flash_nor_init",
+    "start": "0x73c0",
+    "end": "0x73d4",
+    "exit": "0x73d2"
+  },
+  {
+    "name": "flash_nor_register",
+    "start": "0x73d4",
+    "end": "0x73f8",
+    "exit": "0x73f6"
+  },
+  {
+    "name": "sha1_calculate",
+    "start": "0x7400",
+    "end": "0x7424",
+    "exit": "0x7422"
+  },
+  {
+    "name": "sub_7444",
+    "start": "0x7444",
+    "end": "0x7454",
+    "exit": "0x7452"
+  },
+  {
+    "name": "usb_quiesce",
+    "start": "0x7458",
+    "end": "0x746c",
+    "exit": "0x746a"
+  },
+  {
+    "name": "usb_init",
+    "start": "0x7470",
+    "end": "0x74b0",
+    "exit": "0x74ae"
+  },
+  {
+    "name": "sub_74C0",
+    "start": "0x74c0",
+    "end": "0x74d4",
+    "exit": "0x74d2"
+  },
+  {
+    "name": "sub_74E8",
+    "start": "0x74e8",
+    "end": "0x74fc",
+    "exit": "0x74fa"
+  },
+  {
+    "name": "sub_74FC",
+    "start": "0x74fc",
+    "end": "0x7548",
+    "exit": "0x7546"
+  },
+  {
+    "name": "sub_755C",
+    "start": "0x755c",
+    "end": "0x756a",
+    "exit": "0x7568"
+  },
+  {
+    "name": "sub_7598",
+    "start": "0x7598",
+    "end": "0x75d4",
+    "exit": "0x75d2"
+  },
+  {
+    "name": "sub_75D8",
+    "start": "0x75d8",
+    "end": "0x75f8",
+    "exit": "0x75f6"
+  },
+  {
+    "name": "sub_75F8",
+    "start": "0x75f8",
+    "end": "0x761a",
+    "exit": "0x7618"
+  },
+  {
+    "name": "sub_7620",
+    "start": "0x7620",
+    "end": "0x766e",
+    "exit": "0x766c"
+  },
+  {
+    "name": "sub_767C",
+    "start": "0x767c",
+    "end": "0x7736",
+    "exit": "0x7734"
+  },
+  {
+    "name": "sub_7760",
+    "start": "0x7760",
+    "end": "0x7ba8",
+    "exit": "0x7ba6"
+  },
+  {
+    "name": "sub_7BFC",
+    "start": "0x7bfc",
+    "end": "0x7c0a",
+    "exit": "0x7c08"
+  },
+  {
+    "name": "sub_7C10",
+    "start": "0x7c10",
+    "end": "0x7c4e",
+    "exit": "0x7c4c"
+  },
+  {
+    "name": "sub_7C54",
+    "start": "0x7c54",
+    "end": "0x7c78",
+    "exit": "0x7c76"
+  },
+  {
+    "name": "usb_core_start",
+    "start": "0x7c7c",
+    "end": "0x7ea2",
+    "exit": "0x7ea0"
+  },
+  {
+    "name": "usb_core_init",
+    "start": "0x7eb8",
+    "end": "0x7f32",
+    "exit": "0x7f30"
+  },
+  {
+    "name": "sub_7F80",
+    "start": "0x7f80",
+    "end": "0x7fae",
+    "exit": "0x7fac"
+  },
+  {
+    "name": "sub_7FB8",
+    "start": "0x7fb8",
+    "end": "0x7fde",
+    "exit": "0x7fdc"
+  },
+  {
+    "name": "sub_7FEC",
+    "start": "0x7fec",
+    "end": "0x8064",
+    "exit": "0x8062"
+  },
+  {
+    "name": "sub_8094",
+    "start": "0x8094",
+    "end": "0x80ae",
+    "exit": "0x80ac"
+  },
+  {
+    "name": "sub_80BC",
+    "start": "0x80bc",
+    "end": "0x8140",
+    "exit": "0x813e"
+  },
+  {
+    "name": "handle_interface_request",
+    "start": "0x8160",
+    "end": "0x8260",
+    "exit": "0x825e"
+  },
+  {
+    "name": "getDFUImage",
+    "start": "0x8280",
+    "end": "0x82ac",
+    "exit": "0x82aa"
+  },
+  {
+    "name": "cbuf_create",
+    "start": "0x82e8",
+    "end": "0x834e",
+    "exit": "0x834c"
+  },
+  {
+    "name": "update_crc32",
+    "start": "0x8380",
+    "end": "0x83e8",
+    "exit": "0x83e6"
+  },
+  {
+    "name": "crc32",
+    "start": "0x83f4",
+    "end": "0x840c",
+    "exit": "0x840a"
+  },
+  {
+    "name": "image_free",
+    "start": "0x8440",
+    "end": "0x8454",
+    "exit": "0x8452"
+  },
+  {
+    "name": "image_create_from_memory",
+    "start": "0x8458",
+    "end": "0x847a",
+    "exit": "0x8478"
+  },
+  {
+    "name": "image_find",
+    "start": "0x8480",
+    "end": "0x848a",
+    "exit": "0x8488"
+  },
+  {
+    "name": "image_load",
+    "start": "0x8498",
+    "end": "0x84fc",
+    "exit": "0x84fa"
+  },
+  {
+    "name": "find_boot_images",
+    "start": "0x8518",
+    "end": "0x8580",
+    "exit": "0x857e"
+  },
+  {
+    "name": "rsa_set_giant",
+    "start": "0x85c0",
+    "end": "0x8618",
+    "exit": "0x8616"
+  },
+  {
+    "name": "extension_octet_string_value",
+    "start": "0x8618",
+    "end": "0x8646",
+    "exit": "0x8644"
+  },
+  {
+    "name": "verify_pkcs1_sig",
+    "start": "0x8648",
+    "end": "0x87ae",
+    "exit": "0x87ac"
+  },
+  {
+    "name": "verify_signature_with_chain",
+    "start": "0x87bc",
+    "end": "0x8cdc",
+    "exit": "0x8cda"
+  },
+  {
+    "name": "register_blockdev",
+    "start": "0x8d50",
+    "end": "0x8d5c",
+    "exit": "0x8d5a"
+  },
+  {
+    "name": "blockdev_read_block_hook",
+    "start": "0x8d60",
+    "end": "0x8d66",
+    "exit": "0x8d64"
+  },
+  {
+    "name": "blockdev_write_block_hook",
+    "start": "0x8d68",
+    "end": "0x8d6e",
+    "exit": "0x8d6c"
+  },
+  {
+    "name": "blockdev_erase_hook",
+    "start": "0x8d70",
+    "end": "0x8d76",
+    "exit": "0x8d74"
+  },
+  {
+    "name": "blockdev_write_block_protected",
+    "start": "0x8d94",
+    "end": "0x8ebe",
+    "exit": "0x8ebc"
+  },
+  {
+    "name": "construct_blockdev",
+    "start": "0x8ef8",
+    "end": "0x8f74",
+    "exit": "0x8f72"
+  },
+  {
+    "name": "blockdev_write_hook",
+    "start": "0x8fa4",
+    "end": "0x9130",
+    "exit": "0x912e"
+  },
+  {
+    "name": "blockdev_read_hook",
+    "start": "0x9134",
+    "end": "0x92a0",
+    "exit": "0x929e"
+  },
+  {
+    "name": "lookup_blockdev",
+    "start": "0x92a4",
+    "end": "0x92c6",
+    "exit": "0x92c4"
+  },
+  {
+    "name": "platform_cache_operation",
+    "start": "0x9300",
+    "end": "0x93a8",
+    "exit": "0x93a6"
+  },
+  {
+    "name": "platform_get_security_epoch",
+    "start": "0x93c0",
+    "end": "0x93d0",
+    "exit": "0x93ce"
+  },
+  {
+    "name": "platform_get_usb_more_other_string",
+    "start": "0x9400",
+    "end": "0x94a8",
+    "exit": "0x94a6"
+  },
+  {
+    "name": "platform_get_usb_serial_number_string",
+    "start": "0x94bc",
+    "end": "0x956c",
+    "exit": "0x956a"
+  },
+  {
+    "name": "platform_get_usb_product_id",
+    "start": "0x95c0",
+    "end": "0x95d4",
+    "exit": "0x95d2"
+  },
+  {
+    "name": "platform_get_usb_product_string",
+    "start": "0x9600",
+    "end": "0x9604",
+    "exit": "0x9602"
+  },
+  {
+    "name": "platform_get_fuse_modes",
+    "start": "0x9640",
+    "end": "0x965c",
+    "exit": "0x965a"
+  },
+  {
+    "name": "platform_get_iboot_flags",
+    "start": "0x9680",
+    "end": "0x9684",
+    "exit": "0x9682"
+  },
+  {
+    "name": "apply_signed",
+    "start": "0x96c0",
+    "end": "0x96f4",
+    "exit": "0x96f2"
+  },
+  {
+    "name": "__divdi3",
+    "start": "0x96f4",
+    "end": "0x9744",
+    "exit": "0x9742"
+  },
+  {
+    "name": "__udivdi3",
+    "start": "0x976c",
+    "end": "0x9834",
+    "exit": "0x9832"
+  },
+  {
+    "name": "__udivsi3",
+    "start": "0x983c",
+    "end": "0x9854",
+    "exit": "0x9852"
+  },
+  {
+    "name": "__umoddi3",
+    "start": "0x9854",
+    "end": "0x988c",
+    "exit": "0x988a"
+  },
+  {
+    "name": "__umodsi3",
+    "start": "0x988c",
+    "end": "0x98a4",
+    "exit": "0x98a2"
+  },
+  {
+    "name": "memset",
+    "start": "0x98c0",
+    "end": "0x98d8",
+    "exit": null
+  },
+  {
+    "name": "bzero",
+    "start": "0x98d8",
+    "end": "0x99d0",
+    "exit": "0x98e8"
+  },
+  {
+    "name": "sub_9A00",
+    "start": "0x9a00",
+    "end": "0x9a10",
+    "exit": "0x9a0c"
+  },
+  {
+    "name": "sub_9A10",
+    "start": "0x9a10",
+    "end": "0x9a48",
+    "exit": "0x9a44"
+  },
+  {
+    "name": "swap32",
+    "start": "0x9a80",
+    "end": "0x9a84",
+    "exit": "0x9a82"
+  },
+  {
+    "name": "bcopy",
+    "start": "0x9ac0",
+    "end": "0x9acc",
+    "exit": null
+  },
+  {
+    "name": "memmove",
+    "start": "0x9acc",
+    "end": "0x9de8",
+    "exit": "0x9ad4"
+  },
+  {
+    "name": "calloc",
+    "start": "0x9e18",
+    "end": "0x9e38",
+    "exit": "0x9e36"
+  },
+  {
+    "name": "memcmp",
+    "start": "0x9e40",
+    "end": "0x9e68",
+    "exit": "0x9e66"
+  },
+  {
+    "name": "printf_outfunc_state_init",
+    "start": "0x9e80",
+    "end": "0x9e92",
+    "exit": "0x9e90"
+  },
+  {
+    "name": "string_outfunc",
+    "start": "0x9e94",
+    "end": "0x9eb8",
+    "exit": "0x9eb6"
+  },
+  {
+    "name": "longlong_to_string",
+    "start": "0x9eb8",
+    "end": "0x9f82",
+    "exit": "0x9f80"
+  },
+  {
+    "name": "longlong_to_hexstring",
+    "start": "0x9f84",
+    "end": "0x9fcc",
+    "exit": "0x9fca"
+  },
+  {
+    "name": "do_printf",
+    "start": "0x9fd4",
+    "end": "0xa71e",
+    "exit": "0xa71c"
+  },
+  {
+    "name": "vsnprintf",
+    "start": "0xa734",
+    "end": "0xa764",
+    "exit": "0xa762"
+  },
+  {
+    "name": "snprintf",
+    "start": "0xa794",
+    "end": "0xa7b6",
+    "exit": "0xa7b4"
+  },
+  {
+    "name": "putchar",
+    "start": "0xa7c0",
+    "end": "0xa7da",
+    "exit": "0xa7d8"
+  },
+  {
+    "name": "puts",
+    "start": "0xa7f0",
+    "end": "0xa812",
+    "exit": "0xa810"
+  },
+  {
+    "name": "strlcat",
+    "start": "0xa840",
+    "end": "0xa8a0",
+    "exit": "0xa89e"
+  },
+  {
+    "name": "strlcpy",
+    "start": "0xa8c0",
+    "end": "0xa8f6",
+    "exit": "0xa8f4"
+  },
+  {
+    "name": "strlen",
+    "start": "0xa900",
+    "end": "0xa968",
+    "exit": "0xa964"
+  },
+  {
+    "name": "log2_int",
+    "start": "0xa980",
+    "end": "0xa98c",
+    "exit": "0xa98a"
+  },
+  {
+    "name": "strcmp",
+    "start": "0xa9c0",
+    "end": "0xa9dc",
+    "exit": "0xa9da"
+  },
+  {
+    "name": "strnlen",
+    "start": "0xaa00",
+    "end": "0xaa14",
+    "exit": "0xaa12"
+  },
+  {
+    "name": "DERDecodeItem",
+    "start": "0xaa40",
+    "end": "0xaab8",
+    "exit": "0xaab6"
+  },
+  {
+    "name": "DERParseBitString",
+    "start": "0xaab8",
+    "end": "0xaade",
+    "exit": "0xaadc"
+  },
+  {
+    "name": "DERDecodeSeqInit",
+    "start": "0xaafc",
+    "end": "0xab2e",
+    "exit": "0xab2c"
+  },
+  {
+    "name": "DERDecodeSeqContentInit",
+    "start": "0xab30",
+    "end": "0xab40",
+    "exit": "0xab3e"
+  },
+  {
+    "name": "DERDecodeSeqNext",
+    "start": "0xab40",
+    "end": "0xab74",
+    "exit": "0xab72"
+  },
+  {
+    "name": "DERParseSequenceContent",
+    "start": "0xab74",
+    "end": "0xac56",
+    "exit": "0xac54"
+  },
+  {
+    "name": "DERParseSequence",
+    "start": "0xac58",
+    "end": "0xac8e",
+    "exit": "0xac8c"
+  },
+  {
+    "name": "DEREncodeSHA1DigestInfo",
+    "start": "0xaca4",
+    "end": "0xad06",
+    "exit": "0xad04"
+  },
+  {
+    "name": "DEROidCompare",
+    "start": "0xad40",
+    "end": "0xad74",
+    "exit": "0xad72"
+  },
+  {
+    "name": "platform_get_chip_id",
+    "start": "0xad80",
+    "end": "0xad8a",
+    "exit": "0xad88"
+  },
+  {
+    "name": "platform_get_chip_revision",
+    "start": "0xadc0",
+    "end": "0xadca",
+    "exit": "0xadc8"
+  },
+  {
+    "name": "platform_get_ecid_id",
+    "start": "0xae00",
+    "end": "0xae0a",
+    "exit": "0xae08"
+  },
+  {
+    "name": "platform_get_chip_epoch",
+    "start": "0xae40",
+    "end": "0xae4a",
+    "exit": "0xae48"
+  },
+  {
+    "name": "platform_get_production_mode",
+    "start": "0xae80",
+    "end": "0xae8a",
+    "exit": "0xae88"
+  },
+  {
+    "name": "platform_get_security_domain",
+    "start": "0xaec0",
+    "end": "0xaeca",
+    "exit": "0xaec8"
+  },
+  {
+    "name": "platform_get_entropy",
+    "start": "0xaf00",
+    "end": "0xaf0a",
+    "exit": "0xaf08"
+  },
+  {
+    "name": "target_watchdog_tickle",
+    "start": "0xaf40",
+    "end": "0xaf42",
+    "exit": "0xaf40"
+  },
+  {
+    "name": "_platform_halt",
+    "start": "0xaf80",
+    "end": "0xaf8a",
+    "exit": "0xaf88"
+  },
+  {
+    "name": "platform_halt",
+    "start": "0xafc0",
+    "end": "0xafca",
+    "exit": "0xafc8"
+  },
+  {
+    "name": "platform_get_secure_mode",
+    "start": "0xb000",
+    "end": "0xb01a",
+    "exit": "0xb018"
+  },
+  {
+    "name": "platform_get_usb_device_version",
+    "start": "0xb040",
+    "end": "0xb044",
+    "exit": "0xb042"
+  },
+  {
+    "name": "platform_get_usb_manufacturer_string",
+    "start": "0xb080",
+    "end": "0xb084",
+    "exit": "0xb082"
+  },
+  {
+    "name": "platform_get_usb_vendor_id",
+    "start": "0xb0c0",
+    "end": "0xb0c6",
+    "exit": "0xb0c4"
+  }
+]

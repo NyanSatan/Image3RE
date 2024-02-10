@@ -25,13 +25,13 @@ The most interesting part, I guess. Here is the list of the bugs I managed to fi
  2. [CERT memory corruption](https://twitter.com/nyan_satan/status/1225106524021972992?s=21)
  3. [H2FMI bootpage bug](https://twitter.com/nyan_satan/status/1398708563430805511?s=21)
  4. [SRAM memory preservation after a panic](https://twitter.com/nyan_satan/status/1495778569884155904?s=21)
- 
+
  Some of them might be useful, but yet they are not enough on their own
 
 ## Databases
-This repository contains my IDA database with some parts of the bootrom reversed, some function names found and etc.
+This repository contains my IDA database with some parts of the bootrom reversed and 90% function names found - only missing the most of the USB stuff + 2 software division functions
 
-The database is for IDA Pro 7.6 SP1
+The database is for IDA Pro 7.6 SP1, and for those who doesn't have IDA there's a plain JSON with the symbols
 
 ## Dumps
 A6 SecureROM dump (**iBoot-1145.3**) is available here, and along with many others on [securerom.fun](https://securerom.fun)
@@ -426,7 +426,7 @@ header:
 0x10078fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 0x10078ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 
-noone@noones-MacBook-Air ~ % 
+noone@noones-MacBook-Air ~ %
 ```
 
 ### a6_heap_simulator
@@ -449,7 +449,7 @@ Needless to say it found no bugs
 
 Usage:
 ```
-noone@noones-MacBook-Air ~ % srom_stack_analyzer 
+noone@noones-MacBook-Air ~ % srom_stack_analyzer
 not enough args
 usage: srom_stack_analyzer -i <input> -p <platform> -s <sp> -f <fp>
 available platforms: h5p_c0
@@ -457,7 +457,7 @@ available platforms: h5p_c0
 
 Example:
 ```
-noone@noones-MacBook-Air ~ % build/srom_stack_analyzer -i a6-hack/sram-dumps/1653122994.bin -p h5p_c0 -s 0x1007bed4 -f 0x1007bed8 
+noone@noones-MacBook-Air ~ % build/srom_stack_analyzer -i a6-hack/sram-dumps/1653122994.bin -p h5p_c0 -s 0x1007bed4 -f 0x1007bed8
 this is "svc" stack (0x1007c000 - 0x10079800)
 #0 stack frame @ 0x1007bed4 (size 0x4)
 0x1007bed4: 00000000                             ....
@@ -487,7 +487,7 @@ this is "svc" stack (0x1007c000 - 0x10079800)
 0x1007bfe0: 00000000 00000000 00000000 00000000  ................
 0x1007bff0: 00000000 00000000                    ........
 
-noone@noones-MacBook-Air ~ % 
+noone@noones-MacBook-Air ~ %
 ```
 
 ## Other useful resources
